@@ -84,3 +84,12 @@ ORDER BY
 
 
 
+--TAREFA 4 - Listando colaborador com maior salário
+
+SELECT
+    NOME AS COLABORADOR,
+    SALARIO
+FROM
+    BRH.COLABORADOR
+WHERE
+    SAlARIO = (SELECT MAX(SALARIO) FROM BRH.COLABORADOR);
